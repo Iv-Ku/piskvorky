@@ -1,4 +1,17 @@
+body {
+  background-image: linear-gradient(to bottom, #615dad, #ffc8da);
+  color: #ffffff;
+  height: 600px;
+}
+
+.kontejner {
+  flexbox: display;
+  width: 200px;
+}
 h1 {
   font-family: 'Lobster', cursive;
 }
-background-image: linear-gradient(to bottom, #06d7c1, #50cc49);
+
+p {
+  font-family: helvetica, sans-serif;
+}
