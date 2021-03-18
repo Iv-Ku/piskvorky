@@ -1,17 +1,75 @@
 body {
-  background-image: linear-gradient(to bottom, #615dad, #ffc8da);
-  color: #ffffff;
-  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat; 
 }
 
 .kontejner {
-  flexbox: display;
-  width: 200px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #283e50;
+  width: 300px;
 }
+
 h1 {
   font-family: 'Lobster', cursive;
+  text-align: center;
 }
 
 p {
+  font-size: small;
+  font-weight: 200;
   font-family: helvetica, sans-serif;
+  text-align: center;
+  padding: 20px 15px;
+  margin: O 0;
+}
+
+.tlacitka {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: helvetica, sans-serif;
+}
+
+.tlacitka li {
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.pravidla {
+  background-color: #1fcca4;
+  width: 300px;
+  height: 60px;
+  border-bottom: #283e50 2px solid;
+  
+}
+.pravidla a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+.pravidla a:hover {
+  background-color: #1cbb96;
+}
+
+.hrat {
+  background-color: #0197f6;
+  width: 300px;
+  height: 60px;
+}
+
+.hrat a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.hrat a:hover {
+  background-color: #0090e9;
 }
