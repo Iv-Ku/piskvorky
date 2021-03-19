@@ -1,8 +1,14 @@
 body {
-  display: flex;
-  justify-content: center;
+
   background-image: linear-gradient(#615dad, #ffc8da);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  background-size: cover;
+ height: 100vh;
+ 
+}
+
+img, .kontejner {
+  border-radius: 5% 5% 0 0;
 }
 
 .kontejner {
@@ -12,6 +18,8 @@ body {
   align-items: center;
   background-color: #283e50;
   width: 300px;
+  margin: 70px auto;
+  
 }
 
 h1 {
@@ -38,7 +46,6 @@ p {
 .tlacitka li {
   display: inline-block;
   text-align: center;
-  
 }
 
 .pravidla {
@@ -46,7 +53,6 @@ p {
   width: 300px;
   height: 60px;
   border-bottom: #283e50 2px solid;
-  
 }
 .pravidla a {
   display: block;
