@@ -15,6 +15,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  font-size: small;
+  font-weight: 200;
+  font-family: helvetica, sans-serif;
 }
 
 img,
@@ -38,12 +41,11 @@ h1 {
 }
 
 p {
-  font-size: small;
-  font-weight: 200;
-  font-family: helvetica, sans-serif;
   text-align: center;
   padding: 20px 15px;
   margin: O 0;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .tlacitka {
@@ -90,9 +92,54 @@ p {
   background-color: #0090e9;
 }
 
+/* --------------------pravidla ------------- */
+
+.kontejner__pravidla {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #283e50;
+  width: 300px;
+  margin: 70px auto;
+}
+
 .circle,
 .cross {
   width: 1em;
   height: 1em;
   filter: invert(100%);
+}
+.seznam {
+  text-align: left;
+  padding: 20px 15px;
+  margin: O 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+figure {
+  padding: 15px 20px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure figcaption {
+  margin-top: 2%;
+  font-style: italic;
+}
+
+@media screen and (min-width: 750px) {
+  .kontejner__pravidla {
+    width: 700px;
+  }
+  .priklady__flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .figure {
+    flex-basis: 50%;
+  }
 }
