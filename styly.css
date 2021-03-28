@@ -14,7 +14,6 @@ body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   font-size: small;
   font-weight: 200;
   font-family: helvetica, sans-serif;
@@ -110,8 +109,14 @@ p {
   height: 1em;
   filter: invert(100%);
 }
-.seznam {
-  text-align: left;
+.seznam{
+  width:100%;
+
+}
+.priklady_flex {
+  display:flex;
+  flex-wrap:wrap;
+ justify-content: center;
   padding: 20px 15px;
   margin: O 0;
   font-size: 14px;
@@ -120,6 +125,8 @@ p {
 
 figure {
   padding: 15px 20px;
+  width: 100%;
+  margin:0;
 }
 
 figure img {
@@ -131,15 +138,17 @@ figure figcaption {
   font-style: italic;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 540px) {
   .kontejner__pravidla {
     width: 700px;
+
   }
   .priklady__flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
-  .figure {
-    flex-basis: 50%;
+  figure {
+    width: 45%;
   }
 }
