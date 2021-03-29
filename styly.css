@@ -19,7 +19,7 @@ body {
   font-family: helvetica, sans-serif;
 }
 
-img,
+.obrazek img,
 .kontejner {
   border-radius: 8px 8px 0 0;
 }
