@@ -17,6 +17,7 @@ body {
   font-size: small;
   font-weight: 200;
   font-family: helvetica, sans-serif;
+  color: #ffffff;
 }
 
 .obrazek img,
@@ -25,7 +26,6 @@ body {
 }
 
 .kontejner {
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   background-color: #283e50;
@@ -36,6 +36,7 @@ body {
 h1 {
   font-family: 'Lobster', cursive;
   text-align: center;
+  font-size: 4rem;
 }
 
 p {
@@ -130,6 +131,7 @@ figure img {
 figure figcaption {
   margin-top: 2%;
   font-style: italic;
+  text-align: center;
 }
 
 /* -------------responzivní---------------*/
@@ -146,4 +148,74 @@ figure figcaption {
   figure {
     width: 45%;
   }
+}
+
+/* --------------hra------------------*/
+
+.kontejner__hra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rem;
+  align-items: center;
+}
+
+.hraje-nadpis {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0;
+}
+
+.circle_big {
+  height: 1.3rem;
+  filter: invert(100%);
+}
+
+/* --------------ikony------------------*/
+
+.ikona__pravidla,
+.ikona__uvodStr {
+  text-decoration: none;
+}
+
+.home {
+  padding: 8px;
+  background-color: #1fcca4;
+  border-radius: 20%;
+}
+
+.restart {
+  padding: 8px;
+  margin: 0 4px;
+  background-color: #0197f6;
+  border-radius: 20%;
+}
+
+.ikona__pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.ikona__uvodStr:hover {
+  background-color: #1cbb96;
+}
+
+/* ----------čtverečky ------------*/
+.ctverce {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  height: 80vmin;
+  background: rgb(229, 182, 210);
+  background: linear-gradient(
+    10deg,
+    rgba(229, 182, 210, 1) 0%,
+    rgba(178, 148, 196, 1) 100%
+  );
+}
+
+button {
+  border: black solid 1px;
+  width: 7vmin;
+  background: none;
+  padding: 0;
 }
