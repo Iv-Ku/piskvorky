@@ -182,17 +182,16 @@ figure figcaption {
 .navigace__vpravo a {
   padding: 1.1rem 0.6rem 0.6rem 0.6rem;
   margin: 0 0.6rem 0 0;
+  border-radius: 15%;
 }
 
 .ikona__uvodStr {
   background-color: #1fcca4;
-  border-radius: 15%;
   text-decoration: none;
 }
 
 .ikona__hrat {
   background-color: #0197f6;
-  border-radius: 20%;
 }
 
 .ikona__uvodStr:hover {
