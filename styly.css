@@ -150,8 +150,6 @@ figure figcaption {
   }
 }
 
-
-
 /* --------------HRA------------------*/
 
 .kontejner__hra {
@@ -220,5 +218,5 @@ figure figcaption {
 
 .ctverec:hover,
 .ctverec:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
