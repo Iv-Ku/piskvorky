@@ -150,72 +150,76 @@ figure figcaption {
   }
 }
 
-/* --------------hra------------------*/
+
+
+/* --------------HRA------------------*/
 
 .kontejner__hra {
+  max-width: 80vmin;
+  margin: 25px auto;
+  height: 100%;
+}
+
+/* ---------------navigace-----------------*/
+
+.navigace {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 0 20rem;
-  align-items: center;
 }
 
-.hraje-nadpis {
+.navigace__vlevo p {
+  display: inline-block;
   font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0 0.3rem 0 0;
 }
-
-.circle_big {
+.circle__big {
   height: 1.3rem;
   filter: invert(100%);
 }
 
-/* --------------ikony------------------*/
+.navigace__vpravo a {
+  padding: 1.1rem 0.6rem 0.6rem 0.6rem;
+  margin: 0 0.6rem 0 0;
+}
 
-.ikona__pravidla,
 .ikona__uvodStr {
+  background-color: #1fcca4;
+  border-radius: 15%;
   text-decoration: none;
 }
 
-.home {
-  padding: 8px;
-  background-color: #1fcca4;
-  border-radius: 20%;
-}
-
-.restart {
-  padding: 8px;
-  margin: 0 4px;
+.ikona__hrat {
   background-color: #0197f6;
   border-radius: 20%;
-}
-
-.ikona__pravidla:hover {
-  background-color: #1cbb96;
 }
 
 .ikona__uvodStr:hover {
   background-color: #1cbb96;
 }
 
-/* ----------čtverečky ------------*/
-.ctverce {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  height: 80vmin;
-  background: rgb(229, 182, 210);
-  background: linear-gradient(
-    10deg,
-    rgba(229, 182, 210, 1) 0%,
-    rgba(178, 148, 196, 1) 100%
-  );
+.ikona__hrat:hover {
+  background-color: #0090e9;
 }
 
-button {
-  border: black solid 1px;
-  width: 7vmin;
-  background: none;
-  padding: 0;
+/* ---------------herní pole-----------------*/
+
+.ctverce__hra {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 75vmin;
+}
+
+.ctverec {
+  border: 1px solid black;
+  flex: calc(100% / 10);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.ctverec:hover,
+.ctverec:active {
+  opacity: 0.8;
 }
