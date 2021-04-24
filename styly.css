@@ -202,14 +202,14 @@ figure figcaption {
 
 /* ---------------herní pole-----------------*/
 
-.ctverce__hra {
+.pole {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   height: 75vmin;
   border: 1px solid black;
   /*opacity: 0.5;*/
-  background: rgba(255, 255, 255, 0.4)
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .ctverec {
@@ -217,16 +217,13 @@ figure figcaption {
   flex: calc(100% / 10);
   cursor: pointer;
   /*background: rgba(238, 209, 252, 0.1);*/
-  background: rgba(236, 199, 255, 0.1);
+  background: rgba(230, 200, 255, 0.1);
 }
 
 .ctverec:hover,
 .ctverec:active {
-  
- 
- background: rgba(236, 199, 255, 0.6);
+  background-color: rgba(230, 200, 255, 0.6);
 }
-
 /* ---------------javaScript-----------------*/
 
 .ctverec__kolecko {
@@ -234,9 +231,6 @@ figure figcaption {
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
- 
-  
-  
 }
 .ctverec__krizek {
   background-image: url(Obrazky2/cross.svg);
@@ -245,9 +239,4 @@ figure figcaption {
   background-position: center;
 }
 
-.ctverec_krizek:hover,
-.ctverec:active {
-  
- 
- background: rgba(236, 199, 255, 0.6);
-}
+
