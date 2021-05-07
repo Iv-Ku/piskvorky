@@ -128,11 +128,21 @@ const kliknuto = (e) => {
   console.log('jedu furt');
   e.target.disabled = 'true';
 
-  const vyhral = isWinningMove(e.target);
-  if (vyhral === true && hraje === 'kolecko') {
-    alert(`Vyhrálo kolečko`);
-  } else if (vyhral === true && hraje === 'krizek') {
-    alert(`Vyhrál křížek`);
+  const vyhra = isWinningMove(e.target);
+  if (vyhra === true && hraje === 'kolecko') {
+    setTimeout(() => {
+      let msg = confirm(`Vyhrálo kolečko. Hraješ znovu?`);
+      if (msg === true) {
+        location.reload();
+      }
+    }, 200);
+  } else if (vyhra === true && hraje === 'krizek') {
+    setTimeout(() => {
+      let msg = confirm(`Vyhrál křížek. Hraješ znovu?`);
+      if (msg === true) {
+        location.reload();
+      }
+    }, 200);
   }
 
   if (hraje === 'kolecko') {
